@@ -2,8 +2,8 @@ import React from 'react'
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-// import { ComputersCanvas } from './canvas'
 import Computers from './canvas/Computers'
+import { SectionWrapper } from '../hoc'
 
 const Hero = () => {
 	return (
@@ -21,8 +21,8 @@ const Hero = () => {
 					Hi, I'm <span className='text-[#915EFF]'>Kevin</span>
 				</h1>
 				<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-					I develop 3D visuals, user <br className='sm:block hidden' />
-					interfaces and web applications
+					I develop user interfaces <br className='sm:block hidden' />
+					and web applications
 				</p>
 				</div>
 			</div>
