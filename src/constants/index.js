@@ -145,7 +145,7 @@ import {
 
         "Employed Flask and leveraged IBM Cloud for efficient management of patient data, ensuring data security, scalability, and compliance with industry regulations.",
 
-        "Actively engaged in code reviews, providing and receiving constructive feedback to and from fellow developers, contributing to the continuous improvement of code quality and team collaboration..",
+        "Actively engaged in code reviews, providing and receiving constructive feedback to and from fellow developers, contributing to the continuous improvement of code quality and team collaboration.",
       ],
     },
     // {

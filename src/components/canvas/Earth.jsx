@@ -43,7 +43,7 @@ const EarthCanvas = () => {
 				maxPolarAngle={Math.PI / 2}
 				minPolarAngle={Math.PI / 2}
 				rotateSpeed={-0.5}
-				autoRotateSpeed={2.5}
+				autoRotateSpeed={4}
 			/>
 			<Earth />
 
