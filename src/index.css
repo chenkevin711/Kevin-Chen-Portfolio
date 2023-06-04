@@ -13,6 +13,27 @@
   color-scheme: dark;
 }
 
+/* Add custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #161414;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9005a2;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #560548;
+}
+
 .hash-span {
   margin-top: -66px;
   padding-bottom: 100px;

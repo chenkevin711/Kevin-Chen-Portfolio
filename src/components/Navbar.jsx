@@ -54,7 +54,7 @@ return (
 			<li
 			key={nav.id}
 			className={`${
-				active === nav.title ? "text-white" : "text-secondary"
+				active === nav.title ? "text-white border-b-[3px]" : "text-secondary"
 			} hover:text-white text-[18px] font-medium cursor-pointer`}
 			onClick={() => setActive(nav.title)}
 			>
