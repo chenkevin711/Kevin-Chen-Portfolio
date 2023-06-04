@@ -31,14 +31,10 @@ const Contact = () => {
 		e.preventDefault();
 		setLoading(true);
 
-		console.log('env', process.env.EMAILJS_SERVICE_ID)
-		console.log(process.env.EMAILJS_TEMPLATE_ID)
-		console.log(process.env.EMAILJS_PUBLIC_KEY)
-
 		emailjs
 			.send(
-				process.env.EMAILJS_SERVICE_ID,
-				process.env.EMAILJS_TEMPLATE_ID,
+				import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+				import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
 				{
 					from_name: form.name,
 					to_name: "Kevin Chen",
@@ -46,7 +42,7 @@ const Contact = () => {
 					to_email: "chenkevin711@gmail.com",
 					message: form.message,
 				},
-				process.env.EMAILJS_PUBLIC_KEY
+				import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
 			)
 			.then(
 				() => {
