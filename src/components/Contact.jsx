@@ -31,6 +31,10 @@ const Contact = () => {
 		e.preventDefault();
 		setLoading(true);
 
+		console.log('env', process.env.EMAILJS_SERVICE_ID)
+		console.log(process.env.EMAILJS_TEMPLATE_ID)
+		console.log(process.env.EMAILJS_PUBLIC_KEY)
+
 		emailjs
 			.send(
 				process.env.EMAILJS_SERVICE_ID,
