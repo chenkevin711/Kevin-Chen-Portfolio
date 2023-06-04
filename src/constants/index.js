@@ -237,7 +237,7 @@ import {
     {
       name: "FoodNGo",
       description:
-        "Website that allowed users around the Drexel University area to browse local food trucks",
+        "Website that allowed users around the Drexel University area to browse local food trucks. Class project created with a team of 4 students.",
       tags: [
         {
           name: "HTML",
