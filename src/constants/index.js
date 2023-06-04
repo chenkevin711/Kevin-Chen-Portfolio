@@ -18,11 +18,16 @@ import {
     meta,
     starbucks,
     tesla,
+    moberg,
     shopify,
     carrent,
     jobit,
     tripguide,
+    animedatabase,
+    FoodNGo,
     threejs,
+    python,
+    java
   } from "../assets";
   
   export const navLinks = [
@@ -42,21 +47,25 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Student",
+      icon: backend
+    },
+    {
+      title: "Software Engineer",
       icon: web,
     },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
+    // {
+    //   title: "React Native Developer",
+    //   icon: mobile,
+    // },
+    // {
+    //   title: "Backend Developer",
+    //   icon: backend,
+    // },
+    // {
+    //   title: "Content Creator",
+    //   icon: creator,
+    // },
   ];
   
   const technologies = [
@@ -72,101 +81,112 @@ import {
       name: "JavaScript",
       icon: javascript,
     },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
+    // {
+    //   name: "TypeScript",
+    //   icon: typescript,
+    // },
     {
       name: "React JS",
       icon: reactjs,
     },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
+    // {
+    //   name: "Redux Toolkit",
+    //   icon: redux,
+    // },
+    // {
+    //   name: "Tailwind CSS",
+    //   icon: tailwind,
+    // },
+    // {
+    //   name: "Node JS",
+    //   icon: nodejs,
+    // },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
     {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
     {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "python",
+      icon: python
+    },
+    {
+      name: 'java',
+      icon: java
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Software Engineer",
+      company_name: "Moberg Analytics",
+      icon: moberg,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "September 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Contributed to the development of \"CONNECT,\" an advanced data and analytics platform using React.js, enabling precise care for brain-injured patients across diverse use cases, scenarios, and environments.",
+
+        "Collaborated seamlessly with cross-functional teams of developers to deliver high-quality products, fostering a collaborative and results-oriented work environment.",
+
+        "Employed Flask and leveraged IBM Cloud for efficient management of patient data, ensuring data security, scalability, and compliance with industry regulations.",
+
+        "Actively engaged in code reviews, providing and receiving constructive feedback to and from fellow developers, contributing to the continuous improvement of code quality and team collaboration..",
       ],
     },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    // {
+    //   title: "React Native Developer",
+    //   company_name: "Tesla",
+    //   icon: tesla,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2021 - Feb 2022",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Web Developer",
+    //   company_name: "Shopify",
+    //   icon: shopify,
+    //   iconBg: "#383E56",
+    //   date: "Jan 2022 - Jan 2023",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
+    // {
+    //   title: "Full stack Developer",
+    //   company_name: "Meta",
+    //   icon: meta,
+    //   iconBg: "#E6DEDD",
+    //   date: "Jan 2023 - Present",
+    //   points: [
+    //     "Developing and maintaining web applications using React.js and other related technologies.",
+    //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+    //     "Implementing responsive design and ensuring cross-browser compatibility.",
+    //     "Participating in code reviews and providing constructive feedback to other developers.",
+    //   ],
+    // },
   ];
   
   const testimonials = [
@@ -198,68 +218,64 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Anime Database",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Website that allows the user to browse the latest anime.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "flask",
           color: "green-text-gradient",
         },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: animedatabase,
+      source_code_link: "https://vercel.com/chenkevin711/aniflex",
     },
     {
-      name: "Job IT",
+      name: "FoodNGo",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Website that allowed users around the Drexel University area to browse local food trucks",
       tags: [
         {
-          name: "react",
+          name: "HTML",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "Javascript",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: FoodNGo,
+      source_code_link: "https://drexel-food-trucks.rmt-kiki.repl.co",
     },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
-          color: "green-text-gradient",
-        },
-        {
-          name: "css",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
-    },
+    // {
+    //   name: "Trip Guide",
+    //   description:
+    //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    //   tags: [
+    //     {
+    //       name: "nextjs",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "supabase",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/",
+    // },
   ];
   
   export { services, technologies, experiences, testimonials, projects };

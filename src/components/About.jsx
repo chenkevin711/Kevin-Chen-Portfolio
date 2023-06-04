@@ -35,23 +35,23 @@ const ServiceCard = ({index, title, icon}) => {
 const About = () => {
 	return (
 		<>
-			<motion.div>
-				<p className={styles.sectionSubText}>
+			<motion.div className='flex flex-col'>
+				<p className={`${styles.sectionSubText} w-min self-center`}>
 					Introduction
 				</p>
-				<h2 className={styles.sectionHeadText}>
+				<h2 className={`${styles.sectionHeadText} w-min self-center`}>
 					Overview
 				</h2>
 			</motion.div>
 
 			<motion.p
 				variants={fadeIn("", "", 0.1, 1)}
-				className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+				className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] self-center m-auto'
 			>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores facere beatae placeat quaerat sapiente ullam sunt, accusantium quae esse deleniti quod, ipsa neque dolorum soluta illum unde inventore, ipsum omnis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit, veritatis nesciunt necessitatibus eveniet dolor aut nobis libero ad rerum fuga totam tempore minima voluptate error, placeat sint? Nemo, accusantium.
+				I'm an aspiring software developer with experience in Python, Javascript and React. I'm currently a student at Drexel University and is working towards a Bachelor's in Computer Science. I'm a quick learner and enjoy working closely with colleagues and peers to create efficient, scalable, and user-friendly applications. 
 			</motion.p>
 
-			<div className='mt-20 flex flex-wrap gap-10'>
+			<div className='mt-20 flex flex-wrap gap-10 justify-center'>
 				{services.map((service, index) => (
 					<ServiceCard key={service.title} index={index} {...service} />
 				))}
