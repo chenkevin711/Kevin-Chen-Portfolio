@@ -1,12 +1,35 @@
 import React, { Suspense, useEffect, useState } from 'react'
 
-import { Canvas } from '@react-three/fiber'
+import { Canvas, useFrame, useLoader } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import * as THREE from 'three'
 import CanvasLoader from "../Loader"
 
 const Computers = ({ isMobile }) => {
-	const computer = useGLTF('./robot_playground/scene.gltf')
+	const computer = useLoader(GLTFLoader, './robot_playground/scene.gltf')
+
+	let mixer
+    if (computer.animations.length) {
+        mixer = new THREE.AnimationMixer(computer.scene);
+        computer.animations.forEach(clip => {
+            const action = mixer.clipAction(clip)
+            action.play();
+        });
+    }
+
+	useFrame((state, delta) => {
+		mixer?.update(delta)
+	})
+
+	computer.scene.traverse(child => {
+		if (child.isMesh) {
+			child.castShadow = true
+			child.receiveShadow = true
+			child.material.side = THREE.FrontSide
+		}
+	})
 
 	return (
 		<mesh rotation={[0, 2.5, 0]}>
@@ -24,7 +47,7 @@ const Computers = ({ isMobile }) => {
 				object={computer.scene}
 				scale={isMobile ? 1.3 : 3}
 				position={isMobile ? [0, -2, 0] : [0,  -3.2, 0]}
-				rotation={[-0.01, -0.2, -0.1]}
+				rotation={[-0.01, -1.8, -0.1]}
 			/>
 		</mesh>
 	)
